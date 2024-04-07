@@ -12,6 +12,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@libp2p/webrtc": "^4.0.24",
+    "@libp2p/webrtc-star-signalling-server": "^4.0.0",
     "@mapbox/node-pre-gyp": "^1.0.5",
     "baseui": "^9.34.0",
     "evergreen-ui": "^6.0.1",

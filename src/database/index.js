@@ -10,7 +10,9 @@ let programs
 
 // Start IPFS
 export const initIPFS = async () => {
-  return await IPFS.create(Config.ipfs)
+  const ipfsOptions = { repo : './ipfs', }
+  return await IPFS.create(ipfsOptions)
+  //return await IPFS.create(Config.ipfs)
 }
 
 // Start OrbitDB

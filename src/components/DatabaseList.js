@@ -44,14 +44,14 @@ function ProgramList ({ programs, onRemove }) {
         <Table.TextHeaderCell flex='1 1 5%' paddingX={minorScale(1)}>Type</Table.TextHeaderCell>
         <Table.TextHeaderCell flex='1 1 40%' paddingX={0}>Address</Table.TextHeaderCell>
         <Table.TextHeaderCell flex='1 1 10%' paddingX={0}>Added</Table.TextHeaderCell>
-        <Table.TextHeaderCell
+        {/* <Table.TextHeaderCell
           flex='1 1 2%'
           textAlign='center'
           padding={minorScale(2)}
           alignItems='center'
         >
           <Icon size={12} icon={TrashIcon} />
-        </Table.TextHeaderCell>
+        </Table.TextHeaderCell> */}
       </Table.Head>
       <Table.Body>
         {programs.map(e => {
@@ -79,7 +79,7 @@ function ProgramList ({ programs, onRemove }) {
               </Table.TextCell>
               <Table.TextCell flex='1 1 40%' paddingX={0}>{program.address.toString() ? program.address.toString() : program.address}</Table.TextCell>
               <Table.TextCell flex='1 1 10%' paddingX={0}>{program.added ? formatDistanceToNow(program.added) + ' ago': 'Unknown'}</Table.TextCell>
-              <Table.Cell
+              {/* <Table.Cell
                 flex='1 1 2%'
                 display='flex'
                 flexDirection='row'
@@ -94,7 +94,7 @@ function ProgramList ({ programs, onRemove }) {
                   padding={0}
                   onClick={() => onRemove(e.hash, program)}
                 />
-              </Table.Cell>
+              </Table.Cell> */}
             </Table.Row>
         )})}
       </Table.Body>
